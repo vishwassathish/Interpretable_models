@@ -78,3 +78,4 @@ if __name__ == "__main__" :
 	
 	x_train, y_train, x_test, y_test = dataObj.split_train_test(data, split_ratio=0.75)
 	print(len(x_train), len(y_train), len(x_test), len(y_test))
+	
