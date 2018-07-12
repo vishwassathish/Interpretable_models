@@ -23,7 +23,6 @@ class PrepareData():
 				row[i]=float(row[i])
 		return self.data
 
-	
 	def split_train_test(self, data, split_ratio=0.66):
 	# Split data randomly with split_ratio, to train and test data
 		size = len(data)
@@ -66,7 +65,6 @@ class PrepareData():
 			y_test.append(row[-1])
 		return x_train, y_train, x_test, y_test
 	
-
 
 if __name__ == "__main__" :
 
