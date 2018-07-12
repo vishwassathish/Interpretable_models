@@ -1,21 +1,31 @@
-# Robust explainable framework for interpretation of machine learning models #
-
-from sklearn import linear_model
 import pandas as pd
+import numpy as np
+from sklearn import linear_model
+from sklearn.metrics import accuracy_score
+from sklearn.preprocessing import scale
+from data_folds import PrepareData
+
+# I couldn't think of a proper convention to name all the classes we write.
+# So, I'm adding Expl(Explainable) prefix to all the model classes present in sklearn
+class ExplLogisticRegression():
+
+	def __init__(self, filename):
+		raise NotImplementedError
+
+	def train_model(slef)
+		raise NotImplementedError
+
+	## TODO ##
 
 
-class Expl_Logistic_Regression():
-# Class to wrap sklearn's logistic regression, few of LIME's interpretable modules and other custom functions for explaining prediction.
-# Using 'Expl' prefix for wrapper classes used for explainable framework 
-
-	def __init__(self, X, y, split_ratio=0.66):
-	# X : numpy array or python list of shape (n_samples, n_attributes)
-	# y : array of corresponding target class.
-	# split_ratio : Ratio representing how much of X is to be considered as  training samples.
-
-	self.x_train = 
 
 
+class ExplRandomForestClassifier():
 
-if __name__ == '__main__' :
+	def __init__(self, filename):
+		raise NotImplementedError
 
+	def train_model(slef)
+		raise NotImplementedError
+
+	## TODO ##
