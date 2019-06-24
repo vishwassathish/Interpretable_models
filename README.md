@@ -15,8 +15,6 @@ Requirements :
 
 * "codes" folder contains raw python source code for all logistic regression analysis. running the file "log_regression_final.py" as "$> python log_regression_final.py" on command line will render a GUI and instructions can be easily followed from there.
 
-* "data" folder holds all the required data files for the codes. It is advised not to delete any file from this folder. 
-ef
 * jupyter notebook files contains the notebook on which we have done our analysis. If jupyter notebook is available in your system, upload "log_regression.ipynb" and run it as a notebook.
 
 * This file also has the markdown and html format of the notebook, which can only be used to view the code snippets and their corresponding outputs.
