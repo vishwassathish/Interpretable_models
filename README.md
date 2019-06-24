@@ -13,6 +13,8 @@ Requirements :
 - lime
 - tkinter (gui) / jupyter notebook 
 
+--- Get into interpretable_models folder ---
+
 * "codes" folder contains raw python source code for all logistic regression analysis. running the file "log_regression_final.py" as "$> python log_regression_final.py" on command line will render a GUI and instructions can be easily followed from there.
 
 * jupyter notebook files contains the notebook on which we have done our analysis. If jupyter notebook is available in your system, upload "log_regression.ipynb" and run it as a notebook.
