@@ -2,7 +2,7 @@
 
 General library for implementing ML models and performing numerous interpretation of model features, data attributes, input and output data.
 
-By : Vishwas
+By : Vishwas Sathish <br>
 E-Mail : vishwassathish@gmail.com
 
 Requirements :
