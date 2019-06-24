@@ -1,0 +1,33 @@
+*** This file explains how to run codes and obtain explanations ***
+By : Vishwas
+E-Mail : vishwassathish@gmail.com
+
+
+CMD : command prompt / Terminal
+
+1) Before you start off with training the model and explaining it, you need the dataset in a particular format, for the GUI to read and use it.
+	- The dataset must look something like this :- (A dictionar with 5 keys as given below, dumped into a pickle file)
+			myDataDictionary = {
+			        'feature_names':featureNameList [f1, f2 ...]
+			        'x_train':x_train_numpy_array, 
+			        'y_train':y_train_numpy_array, 
+			        'x_validate':x_validate_numpy_array, 
+			        'y_validate':y_validate_numpy_array
+			}
+
+	- To obtain this type of data in pickle format, you need to run the file "dataFolds.py" as "python dataFolds.py" in your CMD. This dumps "myData.pickle" which can be used by the GUI interface later.
+	- A variable called "path" in this code contains path to the "csv" file of your raw data. Change it accordingly for your custom data(Only as a CSV with feature names availabe!). A myData.pickle file has been already generated. So you can skip this hassle and use that instead.
+
+2) Once this myData.pickle is generated, you can train and explain models using our GUI. Run "python log_regression_final.py" on CMD, to obtain a simple GUI with 4 buttons
+	- Click "train model" to train a logistic regression model. Training requires you to upload a data file in the above format. A pop up will prompt you to do so. You can upload myData.pickle which is saved in data folder. Your model will be trained and saved as "model.pickle" in data folder. The CMD will keep updating you with instructions or what is happening in the background.
+
+3) Explanations
+	- Click on explain model/ explain with LIME to get model explanations.
+	- Basic explanation requires you to upload the data (myData.pickle) and the trained model (model.pickle trained on the uploaded data). A pop up will prompt you to do so.
+	- Once uploading is done, explanation graphs are generated with appropriate names in graphs folder. 
+
+4) LIME explanations
+	- LIME requires a "categorical_feature_list" apart from myData.pickle and model.pickle, which I have already provided in the data folder. Once these are uploaded, LIME gives you an explanation graph for each class (true +, true -, false +, false -). It also asks you if you want to analyze one example at a time. You will need to provide the class(1, 2, 3, 4) and the example number in CMD and enter. A html file will be generated in the graphs folder.
+
+5) Exit
+	- Click exit to exit the GUI.
